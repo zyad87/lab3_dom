@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab3-DOM</title>
+  <style>
+    #box {
+      width: 300px;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 50px auto;
+      text-align: center;
+    }
+
+    #text-box {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box">
+    <div id="text-box"> click here</div>
+    <button onclick="changeText(' Button 1')">Button 1</button>
+    <button onclick="changeText('Button 2 ')">Button 2</button>
+    <button onclick="changeText('Button 3 ')">Button 3</button>
+  </div>
+
+  <script>
+    function changeText(newText) {
+      document.getElementById('text-box').innerText = newText;
+    }
+  </script>
+
+</body>
+</html>
